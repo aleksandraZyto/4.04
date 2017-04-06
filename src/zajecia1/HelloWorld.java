@@ -21,6 +21,7 @@ public class HelloWorld {
         //Scanner scanner = new Scanner(System.in);
         //int number = scanner.nextInt();
         //System.out.println("your number is " + number);
+        System.out.println("zrobilam zadanie domowe");
     }
 
 
