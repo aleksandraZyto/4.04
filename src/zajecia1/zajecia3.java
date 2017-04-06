@@ -7,21 +7,27 @@ import java.util.Scanner;
  */
 public class zajecia3 {
     public static void main(String[] args) {
+        //Scanner scanner = new Scanner(System.in);
+        //System.out.println("podaj fahr");
+        //int fahr = scanner.nextInt();
+
+        //fahrrenheiToCelsius(fahr);
+        //celsiusToFahrrenheit(25);
+
+        //System.out.println("podaj a");
+        //int num1 = scanner.nextInt();
+        // System.out.println("podaj b");
+        //int num2 = scanner.nextInt();
+        //System.out.println("podaj c");
+        //int num3 = scanner.nextInt();
+
+        //minMax(num1, num2, num3);
         Scanner scanner = new Scanner(System.in);
-        System.out.println("podaj fahr");
-        int fahr = scanner.nextInt();
-
-        fahrrenheiToCelsius(fahr);
-        celsiusToFahrrenheit(25);
-
-        System.out.println("podaj a");
-        int num1 = scanner.nextInt();
-        System.out.println("podaj b");
-        int num2 = scanner.nextInt();
-        System.out.println("podaj c");
-        int num3 = scanner.nextInt();
-        
-        minMax(num1, num2, num3);
+        System.out.println("podaj wage");
+        int weight = scanner.nextInt();
+        System.out.println("podaj wzrost");
+        double height = scanner.nextDouble();
+        bmi(weight, height);
     }
 
     public static void fahrrenheiToCelsius(int fahr) {
@@ -52,6 +58,18 @@ public class zajecia3 {
         }
         System.out.println("min = " + min);
         System.out.println("max = " + max);
+    }
+
+    public static void bmi(int weight, double height) {
+        double bmi = weight / (height * height);
+        if (bmi <= 18.8) {
+            System.out.println("masz niedowage");
+        } else if (bmi > 18.8 && bmi < 24.9) {
+            System.out.println("twoja waga jest poprawna");
+        } else {
+            System.out.println("masz nadwage");
+        }
+        System.out.println("Twoje bmi to " + bmi);
     }
 
 }
